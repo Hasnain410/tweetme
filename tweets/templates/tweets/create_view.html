@@ -1,10 +1,7 @@
-<form class='form' method='POST'>
+{% extends 'base.html' %}
 
-  {% csrf_token %}
+{% block title %}Create Tweet | {{ block.super }}{% endblock title %}
 
-  {{ form.as_p}}
-
-  <input type='submit' value='Tweet'>
-
-
-</form>
+{% block content %}
+  {% include "tweets/form.html" with form=form btn_title='tweet' %}
+{% endblock content %}
