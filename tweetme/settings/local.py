@@ -37,9 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'crispy_forms',
-    'tweets.apps.TweetsConfig',
     'rest_framework',
+
+    'accounts.apps.AccountsConfig',
+    'tweets.apps.TweetsConfig',
+
     'debug_toolbar',
 
 ]
